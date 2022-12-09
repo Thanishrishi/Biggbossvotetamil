@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="voteresult.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>BB Voting Tamil</title>
+    
+
+    
+</head>
+<body>
+     
+    <div class="navbar">
+        <h1 style="display: inline-block; font-family: 'Kdam Thmor Pro'; display: flex; text-align: center;">Bigg Boss Tamil Vote Result</h1>
+    </div>
+    <div class="main">
+        
+    
+        <div class="votebox">
+        
+            <%for(let i=0;i<name.length;i++){%>
+            <h2><%= "Contestant : " + name[i].name  %></h2> 
+            <h3> <%= "Votes : " + name[i].votes %></h3>
+            <%}%>
+            
+           
+
+    
+        </div>
+        
+       <div class="lastbox">
+        
+       </div>
+    </div>
+    
+    
+</form>
+</body>
+</html>

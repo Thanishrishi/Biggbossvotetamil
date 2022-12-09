@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="votepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Paytone+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>BB Voting Tamil</title>
+    
+
+    
+</head>
+<body>
+     
+    <div class="navbar">
+        <h1 style="display: inline-block; font-family: 'Kdam Thmor Pro'; display: flex; text-align: center;">Bigg Boss Tamil Voting</h1>
+    </div>
+    <div class="main">
+        
+    
+        <div class="votebox">
+           <form action="/vote" method="post">
+            <h1>Vote for your favourite contestant here</h1>
+            <%for(let i=0;i<name.length;i++){%>
+            <input type="checkbox" name="contestant" value=<%= i %> class="radio"  >
+            <label for="cont1"><%= name[i].name %></label>
+            <br>
+            <%}%>
+            
+           
+
+    
+        </div>
+        
+       <div class="lastbox">
+        
+       </div>
+    </div>
+    
+    <div class="buttondiv">
+        <button type="submit">Vote<img src="images/arrow.png" alt=""></button>
+
+    </div>
+</form>
+
+</body>
+</html>
+<script type="text/javascript">
+    // the selector will match all input controls of type :checkbox
+// and attach a click event handler 
+$("input:checkbox").on('click', function() {
+// in the handler, 'this' refers to the box clicked on
+var $box = $(this);
+if ($box.is(":checked")) {
+// the name of the box is retrieved using the .attr() method
+// as it is assumed and expected to be immutable
+var group = "input:checkbox[name='" + $box.attr("name") + "']";
+// the checked state of the group/box on the other hand will change
+// and the current value is retrieved using .prop() method
+$(group).prop("checked", false);
+$box.prop("checked", true);
+} else {
+$box.prop("checked", false);
+}
+});
+   </script>
