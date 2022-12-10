@@ -1,11 +1,11 @@
 body{
     margin: 0;
-    background: linear-gradient(to right ,black,#434242);
+    background-color: #e0e2d2;
     
 }
 
 .navbar{
-    background-color: #22A39F;
+    background-color: #3686c9;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -21,43 +21,13 @@ body{
     height: 600px;
     width: 400px;
     background-color: white;
+    border: solid 5px black;
     margin-top: 60px;
-    opacity: 50%;
    border-radius: 5px;
    padding: 20px;
 
 }
 
-button{
-    width:140px;
-    border-radius: 6px;
-    outline: none;
-    padding: 12px 10px;
-    color:#fff;
-    border: 0;
-    cursor: pointer;
-    background-color: #22A39F;
-    transition: width 0.5s;
-   
-}
-button img{
-    display: none;
-    width:30px;
-}
-button:hover img{
-    display:block;
-}
-button:hover{
-    width: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.buttondiv{
-    display: flex;
-    justify-content: center;
-}
 h2{
     font-family: sans-serif;
     font-size : 25px;

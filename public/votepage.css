@@ -1,11 +1,10 @@
 body{
     margin: 0;
-    background: linear-gradient(to right ,black,#434242);
-    
+    background-color: #e0e2d2;
 }
 
 .navbar{
-    background-color: #22A39F;
+    background-color: #3686c9;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -21,21 +20,21 @@ body{
     height: 600px;
     width: 400px;
     background-color: white;
+    border: solid 5px black;
     margin-top: 60px;
-    opacity: 50%;
    border-radius: 5px;
     padding: 20px;
 }
 
 button{
     width:140px;
-    border-radius: 6px;
+    border-radius: 10px;
     outline: none;
     padding: 12px 10px;
     color:#fff;
     border: 0;
     cursor: pointer;
-    background-color: #22A39F;
+    background-color: #3686c9;
     transition: width 0.5s;
    margin-top: 30px;
 }
