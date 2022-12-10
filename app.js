@@ -4,7 +4,7 @@ const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
 
-mongoose.connect('mongodb+srv://thanishrishi:thanish824@cluster0.9zyflpq.mongodb.net/bbtamilvotes',(error)=>{
+mongoose.connect(process.env.MONGO_URI,(error)=>{
     if(error) console.log(error);
     else console.log("Database Connected");
 })
